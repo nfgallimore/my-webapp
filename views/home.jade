@@ -1,5 +1,6 @@
 html
   head
+    meta(name="viewport",content="width=device-width, initial-scale=1.0")
     title=title
     link(href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css', rel='stylesheet')
   body
@@ -9,10 +10,17 @@ html
         if user
           p Welcome, #{user.fullName}
           p
-            a.small(href="profile") Edit my profile
+            a.small(href="grades") Update Grades
           a.btn.btn-primary(href="/logout") Logout
+          div.container
+            h2 Grades:
+            div.container
+
+            h2 Times:
+            div.container
+
         else
-          p Welcome to my app, ready to get started?
+          p Welcome to Trackr, are you ready to view your progress as a Student-Athlete running track?
           p
             a.btn.btn-primary(href="/login") Login now
           p
